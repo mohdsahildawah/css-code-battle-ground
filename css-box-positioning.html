@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Posioning in CSS</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+
+        .box2 {
+            background-color: cornflowerblue;
+            /* position: relative;
+            top: -50px;
+            left: 56px; */
+        }
+
+        .box3 {
+            background-color: yellow;
+        }
+
+        .box4 {
+            background-color: darkmagenta;
+        }
+
+        .box {
+            margin: 3px;
+            padding: 3px;
+            height: 100px;
+            width: 50vw;
+            border: 2px solid green;
+        }
+        .parent{
+            padding: 40px;
+            margin: 30px;
+            border: 3px solid blueviolet;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> jab ham box 1 ko ABSOLUTE kar dege or top and left ko increase ya decrease krege to vo apne (parent ke prati positioning hoga)... or uska parent positioned(like abosute) hona chahiye .... IF no parent is positioned then... box1 positioning from html</div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
