@@ -1,6 +1,8 @@
 :root{
     --color:rgb(86, 86, 244);   /*globar variable declaration*/
     --seccolor:rgb(144, 144, 238); 
+    --defpad: 10px;
+    --defop: 0.8;
 }
 *{
     margin: 0;
@@ -13,8 +15,9 @@ ul{
    display: flex; 
 }
 ul li {
+    opacity: var(--defop);
     list-style: none;
-    padding: 40px;
+    padding: var(--defpad);
     border: 10px solid var(--seccolor);
 }
 ul li:first-child{
